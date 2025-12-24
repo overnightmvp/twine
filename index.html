@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Toshio - Portfolio</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="template-1.css" id="theme-styles">
+</head>
+<body>
+    <!-- Template Switcher Navigation (Top) -->
+    <div class="template-nav">
+        <button class="nav-arrow" id="prevTemplate">←</button>
+        <span class="template-name" id="templateName">Glassmorphism Luxury</span>
+        <button class="nav-arrow" id="nextTemplate">→</button>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="app" id="mainApp">
+        
+        <!-- Portfolio Section -->
+        <section class="section-content active" id="portfolioSection">
+            <div class="profile-container">
+                
+                <!-- Profile Header -->
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="https://thumbs.twinecdn.com/5573cf38e1c8dbe6cd2ea3211cbd2ef3/avatar/4927f427-0842-43ab-81cd-88d5641326ab/190x190.jpg" alt="Johnny Toshio">
+                    </div>
+                    <div class="profile-info">
+                        <div class="featured-roles">
+                            <span class="role">Product Designer</span>
+                            <span class="role">Web Designer</span>
+                        </div>
+                        <h1 class="profile-name">Johnny Toshio</h1>
+                        <p class="profile-bio">Hi, I'm JohnnyToshio, a freelancer from Bangkok, Thailand on twine.net. Check out my links and socials below.</p>
+                        
+                        <!-- CTA Button (Animated) -->
+                        <div class="cta-container">
+                            <a href="https://www.twine.net/JohnnyToshio" class="cta-button" target="_blank" rel="noopener noreferrer">
+                                <span class="cta-text">View My Twine Profile</span>
+                                <span class="cta-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Gallery -->
+                <div class="portfolio-section">
+                    <h2 class="section-title">Featured Work</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="Project 1">
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>Brand Identity Design</h3>
+                                <p>Complete branding package for tech startup</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Project 2">
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>E-commerce Platform</h3>
+                                <p>UI/UX design for modern shopping experience</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop" alt="Project 3">
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>Mobile App Design</h3>
+                                <p>Fitness tracking app with gamification</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="Project 4">
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>Dashboard Interface</h3>
+                                <p>Analytics dashboard for SaaS platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="testimonials-section">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Johnny delivered exceptional work on our brand redesign. His attention to detail and creative vision exceeded our expectations."</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah Chen</strong>
+                                <span>CEO, TechStart Inc</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Working with Johnny was a pleasure. He understood our vision perfectly and brought it to life with stunning designs."</p>
+                            <div class="testimonial-author">
+                                <strong>Michael Roberts</strong>
+                                <span>Product Manager, InnovateCo</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Highly professional and creative. Johnny's designs helped us increase user engagement by 45%. Would definitely hire again!"</p>
+                            <div class="testimonial-author">
+                                <strong>Emma Thompson</strong>
+                                <span>Marketing Director, GrowthLab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-section">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <span class="submit-icon">✉</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Style Guide Section -->
+        <section class="section-content" id="styleGuideSection">
+            <div class="style-guide-container">
+                <h1 class="guide-main-title">Design System Documentation</h1>
+                
+                <!-- Color Palette -->
+                <div class="guide-section">
+                    <h2 class="guide-title">Color Palette</h2>
+                    <div class="color-grid">
+                        <div class="color-item">
+                            <div class="color-swatch primary-color"></div>
+                            <div class="color-info">
+                                <strong>Primary</strong>
+                                <code>--primary</code>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch secondary-color"></div>
+                            <div class="color-info">
+                                <strong>Secondary</strong>
+                                <code>--secondary</code>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch accent-color"></div>
+                            <div class="color-info">
+                                <strong>Accent</strong>
+                                <code>--accent</code>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch bg-color"></div>
+                            <div class="color-info">
+                                <strong>Background</strong>
+                                <code>--bg-primary</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <div class="guide-section">
+                    <h2 class="guide-title">Typography</h2>
+                    <div class="typography-samples">
+                        <h1 class="sample-h1">Heading 1 - 48px</h1>
+                        <h2 class="sample-h2">Heading 2 - 32px</h2>
+                        <h3 class="sample-h3">Heading 3 - 24px</h3>
+                        <p class="sample-body">Body Text - 16px. The quick brown fox jumps over the lazy dog.</p>
+                        <p class="sample-small">Small Text - 14px. Supporting text and captions.</p>
+                    </div>
+                </div>
+
+                <!-- Spacing System -->
+                <div class="guide-section">
+                    <h2 class="guide-title">Spacing System</h2>
+                    <div class="spacing-samples">
+                        <div class="spacing-item"><div class="spacing-box" style="width: 8px;"></div><span>xs: 8px</span></div>
+                        <div class="spacing-item"><div class="spacing-box" style="width: 16px;"></div><span>sm: 16px</span></div>
+                        <div class="spacing-item"><div class="spacing-box" style="width: 24px;"></div><span>md: 24px</span></div>
+                        <div class="spacing-item"><div class="spacing-box" style="width: 32px;"></div><span>lg: 32px</span></div>
+                        <div class="spacing-item"><div class="spacing-box" style="width: 48px;"></div><span>xl: 48px</span></div>
+                    </div>
+                </div>
+
+                <!-- Components -->
+                <div class="guide-section">
+                    <h2 class="guide-title">Components</h2>
+                    
+                    <h3 class="component-subtitle">Buttons</h3>
+                    <div class="component-showcase">
+                        <button class="demo-button primary">Primary Button</button>
+                        <button class="demo-button secondary">Secondary Button</button>
+                        <button class="demo-button outline">Outline Button</button>
+                    </div>
+
+                    <h3 class="component-subtitle">Cards</h3>
+                    <div class="component-showcase">
+                        <div class="demo-card">
+                            <h4>Card Title</h4>
+                            <p>Card content goes here with descriptive text.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="component-subtitle">Form Elements</h3>
+                    <div class="component-showcase">
+                        <input type="text" placeholder="Input field" class="demo-input">
+                        <textarea placeholder="Textarea" class="demo-textarea" rows="3"></textarea>
+                    </div>
+
+                    <h3 class="component-subtitle">Role Tags</h3>
+                    <div class="component-showcase">
+                        <span class="role">Product Designer</span>
+                        <span class="role">Web Designer</span>
+                        <span class="role">UI/UX Expert</span>
+                    </div>
+                </div>
+
+                <!-- HTML Structure -->
+                <div class="guide-section">
+                    <h2 class="guide-title">HTML Structure</h2>
+                    <pre class="code-block"><code>&lt;!-- Profile Header --&gt;
+&lt;div class="profile-header"&gt;
+  &lt;div class="profile-image"&gt;
+    &lt;img src="..." alt="..."&gt;
+  &lt;/div&gt;
+  &lt;div class="profile-info"&gt;
+    &lt;div class="featured-roles"&gt;
+      &lt;span class="role"&gt;Role&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;h1 class="profile-name"&gt;Name&lt;/h1&gt;
+    &lt;p class="profile-bio"&gt;Bio...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <!-- CSS Architecture -->
+                <div class="guide-section">
+                    <h2 class="guide-title">CSS Architecture</h2>
+                    <div class="architecture-info">
+                        <h3>File Structure</h3>
+                        <ul>
+                            <li><strong>base.css</strong> - Reset, variables, common utilities</li>
+                            <li><strong>template-1.css</strong> - Glassmorphism Luxury theme</li>
+                            <li><strong>template-2.css</strong> - Neo-Brutalism Bold theme</li>
+                            <li><strong>template-3.css</strong> - Gradient Vibrant theme</li>
+                            <li><strong>template-4.css</strong> - Minimal Professional theme</li>
+                            <li><strong>template-5.css</strong> - 3D Elevated Cards theme</li>
+                        </ul>
+                        <h3>CSS Custom Properties</h3>
+                        <p>Each theme uses CSS variables for easy customization:</p>
+                        <pre class="code-block"><code>:root {
+  --primary: #color;
+  --secondary: #color;
+  --accent: #color;
+  --bg-primary: #color;
+  --text-primary: #color;
+  --spacing-xs: 8px;
+  --radius: 12px;
+}</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bottom Section Navigator -->
+    <div class="bottom-nav">
+        <button class="nav-tab active" data-section="portfolioSection">
+            <span class="nav-icon">👤</span>
+            <span>Portfolio</span>
+        </button>
+        <button class="nav-tab" data-section="styleGuideSection">
+            <span class="nav-icon">🎨</span>
+            <span>Style Guide</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
