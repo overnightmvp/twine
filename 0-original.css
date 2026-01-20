@@ -1,0 +1,75 @@
+/* ===================================================================
+   ORIGINAL BACKEND CSS
+   This is the default CSS that gets replaced by custom themes
+   =================================================================== */
+
+body {
+    background-image: linear-gradient(135deg,#0a0022,#04121f);
+    font-optical-sizing: auto
+}
+
+.app {
+    @media (min-width: 601px) {
+        --tw-bg-opacity:0.6;
+        background-color:rgb(30 41 59/var(--tw-bg-opacity));
+        box-shadow: inset 0 1px 0 0 #ffffff1a
+    }
+}
+
+.featured-roles .role {
+    color: #40a0f5;
+    font-weight: 600
+}
+
+.social-links a {
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    font-size: 24px;
+    font-weight: 600;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px
+}
+
+.social-links a:hover {
+    background-color: #000
+}
+
+.profile h1 {
+    color: #fff;
+    font-weight: 800
+}
+
+.profile p {
+    color: #e2e8f0
+}
+
+.button-links {
+    margin: 40px 0
+}
+
+.button-link {
+    -webkit-appearance: button;
+    appearance: button;
+    background-color: #0000;
+    border: 1px solid #e5e7eb33;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    color: #cbd5e1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: background-color .2s ease-in-out,border-color .2s ease-in-out
+}
+
+.button-link:hover {
+    background-color: #0000;
+    border: 1px solid #e5e7eb66
+}
+
+/*# sourceMappingURL=62.6a7e8e25.chunk.css.map*/

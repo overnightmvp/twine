@@ -1,0 +1,407 @@
+/* ===================================================================
+   GITHUB DARK PROFESSIONAL THEME
+   Developer-focused dark mode design with green accents
+   Inspired by GitHub profile design
+   =================================================================== */
+
+/* ===================================================================
+   S-TIER ENHANCEMENTS
+   =================================================================== */
+
+/* ===================================================================
+   GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
+   =================================================================== */
+
+/* Container Padding Reset */
+.app,
+.profile {
+    padding: 0 !important;
+}
+
+/* Button Links - Full Width */
+.button-link {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Role Hover State - Shrink Effect */
+.featured-roles .role:hover {
+    font-size: 10px !important;
+    padding: 0 10px !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #58A6FF !important;
+}
+
+a:hover {
+    color: #2EA44F !important;
+}
+
+body {
+    background-color: #0D1117 !important;
+    background-image: linear-gradient(135deg, #0D1117 0%, #161B22 100%) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* ===================================================================
+   PAGE LOAD REVEAL ANIMATION
+   =================================================================== */
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInStagger {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app {
+    background: transparent !important;
+    box-shadow: none !important;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-content {
+    background: #161B22;
+    padding: 24px 32px;
+    animation: fadeInPage 0.6s ease-out;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+    border: 1px solid #30363D;
+}
+
+/* Staggered Reveals */
+.profile-image { animation: fadeInStagger 0.6s ease-out 0s both; }
+.featured-roles { animation: fadeInStagger 0.6s ease-out 0.1s both; }
+.profile h1 { animation: fadeInStagger 0.6s ease-out 0.2s both; }
+.bio-container { animation: fadeInStagger 0.6s ease-out 0.3s both; }
+.button-links { animation: fadeInStagger 0.6s ease-out 0.4s both; }
+.social-links { animation: fadeInStagger 0.6s ease-out 0.5s both; }
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
+
+/* ===================================================================
+   PROFILE COMPONENTS
+   =================================================================== */
+
+.profile {
+    display: block;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 0 16px;
+    contain: layout;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(46, 164, 79, 0.3);
+    display: block;
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.featured-roles {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.featured-roles .role {
+    background: transparent !important;
+    color: #C9D1D9 !important;
+    padding: 0 16px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    border: 1px solid #30363D;
+    transition: background-color .2s ease;
+    height: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.featured-roles .role:hover {
+    background: #2EA44F !important;
+    color: #FFFFFF !important;
+    border-color: #2EA44F;
+    box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3);
+    transform: translateY(-2px);
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.featured-roles .role:focus-visible {
+    outline: 3px solid #2EA44F;
+    outline-offset: 3px;
+}
+
+.profile h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 48px;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin: 6px 0;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(46, 164, 79, 0.2);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.bio-container p {
+    color: #8B949E !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3;
+    font-weight: 200;
+    margin: 0px 0;
+    text-align: left;
+}
+
+/* ===================================================================
+   BUTTON MICROANIMATIONS (ONLY)
+   =================================================================== */
+
+.button-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0 !important;
+}
+
+.button-link,
+.button-link:focus {
+    font-size: 16px !important;
+    padding: 12px 28px !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #30363D !important;
+    box-shadow: 0 2px 8px rgba(46, 164, 79, 0.2) !important;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .2s ease;
+    text-align: center;
+    height: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.button-link:hover {
+    background: #238636 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3) !important;
+    border-color: #238636 !important;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.button-link:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(35, 134, 54, 0.2) !important;
+}
+
+.button-link:focus-visible {
+    outline: 3px solid #2EA44F;
+    outline-offset: 3px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 44px;
+    min-height: 44px;
+    background: transparent !important;
+    color: #8B949E !important;
+    border: 1px solid #30363D !important;
+    border-radius: 50% !important;
+    transition: background-color .2s ease, transform .2s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+.social-links a:hover {
+    background: #2EA44F !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3) !important;
+    border-color: #2EA44F !important;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid #2EA44F;
+    outline-offset: 3px;
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+@media print {
+    body {
+        background: white !important;
+        padding: 0;
+    }
+
+    .profile-content {
+        box-shadow: none !important;
+        animation: none;
+        border-radius: 16px;
+        background: white !important;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .profile-details {
+        text-align: left;
+    }
+
+    .featured-roles {
+        justify-content: flex-start;
+    }
+
+    .social-links,
+    .button-links {
+        display: none !important;
+    }
+
+    .profile h1 {
+        text-shadow: none;
+        color: #2EA44F !important;
+    }
+
+    .bio-container p {
+        color: #333 !important;
+    }
+}
+
+/* ===================================================================
+   MOBILE RESPONSIVE
+   =================================================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile-content {
+        padding: 16px 24px;
+        border-radius: 24px;
+    }
+
+    .profile h1 {
+        font-size: 32px;
+        margin: 4px 0;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin: 0 0 12px;
+    }
+
+    .profile-details {
+        text-align: left;
+    }
+
+    .featured-roles {
+        justify-content: flex-start;
+    }
+
+    .bio-container p {
+        font-size: 14px;
+    }
+
+    .button-link {
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+        height: 44px;
+    }
+
+    .featured-roles .role {
+        font-size: 9px;
+        padding: 0 12px;
+        height: 36px;
+        min-height: 36px;
+    }
+
+    .social-links a {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content {
+        padding: 20px;
+    }
+
+    .profile h1 {
+        font-size: 28px;
+    }
+}

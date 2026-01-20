@@ -1,0 +1,445 @@
+/* ===================================================================
+   GLASSMORPHISM LUXURY THEME
+   Elegant, sophisticated with frosted glass and floating animations
+   =================================================================== */
+
+/* ===================================================================
+   S-TIER ENHANCEMENTS
+   =================================================================== */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@700&display=swap');
+
+/* ===================================================================
+   GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
+   =================================================================== */
+
+/* Container Padding Reset */
+.app,
+.profile {
+    padding: 0 !important;
+}
+
+/* Button Links - Full Width */
+.button-link {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Role Hover State - Shrink Effect */
+.featured-roles .role:hover {
+    font-size: 10px !important;
+    padding: 10px 10px !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+a:hover {
+    color: #DEF141 !important;
+}
+
+body {
+    background-color: #080214 !important;
+    background-image:
+        radial-gradient(at 86% 79%, #2e1a53 0%, transparent 59%),
+        radial-gradient(at 10% 13%, #0f0323 0%, transparent 40%),
+        radial-gradient(at 50% 50%, #160630 0%, transparent 50%) !important;
+    font-family: "Fahkwang", sans-serif !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    border-radius: 50%;
+    top: -250px;
+    right: -250px;
+    animation: pulse 8s ease-in-out infinite;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+    border-radius: 50%;
+    bottom: -150px;
+    left: -150px;
+}
+
+@keyframes meshShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* ===================================================================
+   PAGE LOAD REVEAL ANIMATION
+   =================================================================== */
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInStagger {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app {
+    background: transparent !important;
+    box-shadow: none !important;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-content {
+    padding: 16px 32px;
+    animation: fadeInPage 0.6s ease-out;
+}
+
+/* Staggered Reveals */
+.profile-image { animation: fadeInStagger 0.6s ease-out 0s both; }
+.featured-roles { animation: fadeInStagger 0.6s ease-out 0.1s both; }
+.profile h1 { animation: fadeInStagger 0.6s ease-out 0.2s both; }
+.bio-container { animation: fadeInStagger 0.6s ease-out 0.3s both; }
+.button-links { animation: fadeInStagger 0.6s ease-out 0.4s both; }
+.social-links { animation: fadeInStagger 0.6s ease-out 0.5s both; }
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+
+    body {
+        animation: none;
+        background-image: radial-gradient(at 50% 50%, #262626 0px, transparent 60%);
+        background-size: 100% 100%;
+    }
+}
+
+/* ===================================================================
+   PROFILE COMPONENTS
+   =================================================================== */
+
+.profile {
+    display: block;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 16px;
+    contain: layout;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.featured-roles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.featured-roles .role {
+    background: rgba(158, 129, 254, 0.15) !important;
+    color: #FFFFFF !important;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    border: 1px solid rgba(158, 129, 254, 0.4);
+    transition: all 0.2s ease;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.featured-roles .role:hover {
+    background: #9E81FE !important;
+    color: #DEF141 !important;
+    border-color: #9E81FE;
+    box-shadow: 0 0 20px rgba(158, 129, 254, 0.5);
+}
+
+.featured-roles .role:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 3px;
+}
+
+.profile h1 {
+    font-family: "Fahkwang", sans-serif !important;
+    font-size: 48px;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    margin: 6px 0;
+    letter-spacing: -0.5px;
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(158, 129, 254, 0.2);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.bio-container p {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+/* ===================================================================
+   BUTTON MICROANIMATIONS (ONLY)
+   =================================================================== */
+
+.button-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0 !important;
+}
+
+.button-link,
+.button-link:focus {
+    font-size: 17px !important;
+    padding: 10px 25px !important;
+    border-radius: 0.7rem !important;
+    background: rgba(158, 129, 254, 0.15) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(158, 129, 254, 0.4) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200 !important;
+    text-decoration: none !important;
+    font-family: "Fahkwang", sans-serif;
+}
+
+.button-link:hover {
+    background: #0f0323 !important;
+    color: #DEF141 !important;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(222, 241, 65, 0.3) !important;
+    border-color: rgba(158, 129, 254, 0.6) !important;
+    will-change: transform;
+}
+
+.button-link:active {
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 4px 12px rgba(222, 241, 65, 0.2) !important;
+}
+
+.button-link:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 3px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 44px;
+    min-height: 44px;
+    background: rgba(158, 129, 254, 0.15) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(158, 129, 254, 0.4) !important;
+    border-radius: 50% !important;
+    transition: all 0.2s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+.social-links a:hover {
+    background: #0f0323 !important;
+    color: #DEF141 !important;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(222, 241, 65, 0.3) !important;
+    will-change: transform;
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 3px;
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+@media print {
+    body {
+        background: white !important;
+        padding: 0;
+    }
+
+    body::before,
+    body::after {
+        display: none;
+    }
+
+    .profile-content {
+        box-shadow: none !important;
+        border: 2px solid #667eea;
+        animation: none;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .profile-details {
+        text-align: left;
+    }
+
+    .featured-roles {
+        justify-content: flex-start;
+    }
+
+    .social-links,
+    .button-links {
+        display: none !important;
+    }
+
+    .profile h1 {
+        text-shadow: none;
+        color: #000 !important;
+    }
+}
+
+/* ===================================================================
+   MOBILE RESPONSIVE
+   =================================================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile-content {
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+
+    .profile h1 {
+        font-size: 32px;
+        margin: 4px 0;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 12px;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .featured-roles {
+        justify-content: center;
+    }
+
+    .bio-container p {
+        font-size: 14px;
+    }
+
+    .button-link {
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+    }
+
+    .featured-roles .role {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+
+    .social-links a {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content {
+        padding: 32px 24px;
+    }
+
+    .profile h1 {
+        font-size: 28px;
+    }
+}

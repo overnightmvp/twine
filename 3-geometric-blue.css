@@ -1,0 +1,405 @@
+/* ===================================================================
+   SHARP ANGULAR PROFESSIONAL THEME
+   Corporate, precise design with sharp rectangular edges
+   =================================================================== */
+
+/* ===================================================================
+   S-TIER ENHANCEMENTS
+   =================================================================== */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+/* ===================================================================
+   GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
+   =================================================================== */
+
+/* Container Padding Reset */
+.app,
+.profile {
+    padding: 0 !important;
+}
+
+/* Button Links - Full Width */
+.button-link {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Role Hover State - Shrink Effect */
+.featured-roles .role:hover {
+    font-size: 10px !important;
+    padding: 10px 10px !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #2C3E50 !important;
+}
+
+a:hover {
+    color: #E74C3C !important;
+}
+
+body {
+    background-color: #ECF0F1 !important;
+    background-image: none !important;
+    font-family: "Roboto Condensed", sans-serif !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* ===================================================================
+   PAGE LOAD REVEAL ANIMATION
+   =================================================================== */
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInStagger {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app {
+    background: transparent !important;
+    box-shadow: none !important;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-content {
+    background: #FFFFFF;
+    padding: 16px 32px;
+    animation: fadeInPage 0.6s ease-out;
+    box-shadow: 4px 4px 0 #2C3E50;
+    border: 2px solid #2C3E50;
+}
+
+/* Staggered Reveals */
+.profile-image { animation: fadeInStagger 0.6s ease-out 0s both; }
+.featured-roles { animation: fadeInStagger 0.6s ease-out 0.1s both; }
+.profile h1 { animation: fadeInStagger 0.6s ease-out 0.2s both; }
+.bio-container { animation: fadeInStagger 0.6s ease-out 0.3s both; }
+.button-links { animation: fadeInStagger 0.6s ease-out 0.4s both; }
+.social-links { animation: fadeInStagger 0.6s ease-out 0.5s both; }
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
+
+/* ===================================================================
+   PROFILE COMPONENTS
+   =================================================================== */
+
+.profile {
+    display: block;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 16px;
+    contain: layout;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    border: 3px solid #2C3E50;
+    box-shadow: 4px 4px 0 #3498DB;
+    display: block;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.featured-roles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.featured-roles .role {
+    background: rgba(52, 152, 219, 0.15) !important;
+    color: #2C3E50 !important;
+    padding: 5px 10px;
+    border-radius: 0;
+    font-size: 10px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    border: 2px solid #2C3E50;
+    transition: all 0.2s ease;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 0 #2C3E50;
+}
+
+.featured-roles .role:hover {
+    background: #3498DB !important;
+    color: #E74C3C !important;
+    border-color: #2C3E50;
+    box-shadow: 3px 3px 0 #2C3E50;
+    transform: translate(-1px, -1px);
+}
+
+.featured-roles .role:focus-visible {
+    outline: 3px solid #E74C3C;
+    outline-offset: 3px;
+}
+
+.profile h1 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 48px;
+    color: #2C3E50 !important;
+    font-weight: 700 !important;
+    margin: 6px 0;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 #3498DB;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.bio-container p {
+    color: #2C3E50 !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+/* ===================================================================
+   BUTTON MICROANIMATIONS (ONLY)
+   =================================================================== */
+
+.button-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0 !important;
+}
+
+.button-link,
+.button-link:focus {
+    font-size: 17px !important;
+    padding: 10px 25px !important;
+    border-radius: 0 !important;
+    background: rgba(52, 152, 219, 0.15) !important;
+    color: #2C3E50 !important;
+    border: 2px solid #2C3E50 !important;
+    box-shadow: 3px 3px 0 #2C3E50 !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-link:hover {
+    background: #2C3E50 !important;
+    color: #E74C3C !important;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #3498DB !important;
+    border-color: #2C3E50 !important;
+    will-change: transform;
+}
+
+.button-link:active {
+    transform: translate(0, 0) !important;
+    box-shadow: 2px 2px 0 #2C3E50 !important;
+}
+
+.button-link:focus-visible {
+    outline: 3px solid #E74C3C;
+    outline-offset: 3px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 44px;
+    min-height: 44px;
+    background: rgba(52, 152, 219, 0.15) !important;
+    color: #2c3e50 !important;
+    border: 2px solid #2C3E50 !important;
+    border-radius: 0 !important;
+    transition: all 0.2s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    box-shadow: 2px 2px 0 #2C3E50;
+}
+
+.social-links a:hover {
+    background: #2C3E50 !important;
+    color: #E74C3C !important;
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 #3498DB !important;
+    will-change: transform;
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid #E74C3C;
+    outline-offset: 3px;
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+@media print {
+    body {
+        background: white !important;
+        padding: 0;
+    }
+
+    .profile-content {
+        box-shadow: none !important;
+        border: 2px solid #2C3E50;
+        animation: none;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .profile-details {
+        text-align: left;
+    }
+
+    .featured-roles {
+        justify-content: flex-start;
+    }
+
+    .social-links,
+    .button-links {
+        display: none !important;
+    }
+
+    .profile h1 {
+        text-shadow: none;
+        color: #2C3E50 !important;
+    }
+}
+
+/* ===================================================================
+   MOBILE RESPONSIVE
+   =================================================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile-content {
+        padding: 12px 20px;
+        box-shadow: 3px 3px 0 #2C3E50;
+    }
+
+    .profile h1 {
+        font-size: 32px;
+        margin: 4px 0;
+        text-shadow: 2px 2px 0 #3498DB;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 12px;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .featured-roles {
+        justify-content: center;
+    }
+
+    .bio-container p {
+        font-size: 14px;
+    }
+
+    .button-link {
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+        box-shadow: 2px 2px 0 #2C3E50 !important;
+    }
+
+    .featured-roles .role {
+        font-size: 9px;
+        padding: 4px 8px;
+        box-shadow: 1px 1px 0 #2C3E50;
+    }
+
+    .social-links a {
+        width: 48px !important;
+        height: 48px !important;
+        box-shadow: 3px 3px 0 #2C3E50;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content {
+        padding: 24px 20px;
+    }
+
+    .profile h1 {
+        font-size: 28px;
+    }
+}
