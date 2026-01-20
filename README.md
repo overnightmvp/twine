@@ -1,6 +1,6 @@
-# 🎨 10 S-TIER CSS THEMES FOR TWINE PROFILES
+# 🎨 10 CSS THEMES FOR TWINE PROFILES
 
-Premium CSS theme collection with S-tier UI/UX standards - ready to drop into your client's React app.
+CSS theme collection with S-tier UI/UX standards - ready to drop into your client's React app.
 
 ## 📦 What You Have
 
