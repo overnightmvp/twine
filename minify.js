@@ -7,7 +7,8 @@ const themes = [
     '2-retro-gaming',
     '3-geometric-blue',
     '4-linkedin',
-    '5-Github'
+    '5-Github',
+    '6-whatsapp'
 ];
 
 console.log('🔧 Starting CSS minification...\n');

@@ -1,6 +1,6 @@
 /* ===================================================================
-   NEO-BRUTALISM THEME - S-TIER VERSION
-   Bold, edgy design with chunky borders and asymmetric layout
+   WHATSAPP DARK THEME - S-TIER VERSION
+   Clean, minimal design inspired by WhatsApp's dark mode aesthetic
    =================================================================== */
 
 /* ===================================================================
@@ -8,7 +8,7 @@
    =================================================================== */
 
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* ===================================================================
    GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
@@ -46,9 +46,10 @@ a {
 }
 
 body {
-    background: #FAFAFA !important;
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23d4d4d4' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
-    font-family: Arial, sans-serif !important;
+    background-color: #0d0d0d;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231a1a1a' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #E9EDEF !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif !important;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -78,10 +79,10 @@ body {
 }
 
 .profile-content {
-    background: #FFFFFF;
-    border: 6px solid #000000;
-    box-shadow: 12px 12px 0 #FFD700;
-    padding: 16px 32px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 24px 32px;
     animation: fadeInPage 0.6s ease-out;
 }
 
@@ -110,7 +111,7 @@ body {
 .profile-image {
     width: 120px;
     height: 120px;
-    margin: 0 auto 16px;
+    margin: 0 0 16px;
     contain: layout;
 }
 
@@ -118,67 +119,76 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 5px solid #000000;
-    box-shadow: 8px 8px 0 #FF6B6B;
+    border: 3px solid #25D366;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
     display: block;
 }
 
 .profile-details {
-    text-align: center;
+    text-align: left;
 }
 
 .featured-roles {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .featured-roles .role {
-    background: #000000 !important;
-    color: #FFD700 !important;
-    padding: 5px 10px;
-    border: 3px solid #000000;
-    font-size: 10px;
-    font-weight: 900 !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.2s ease;
+    background: #2a2a2a !important;
+    color: #25D366 !important;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
     min-height: 36px;
     display: inline-flex;
     align-items: center;
 }
 
 .featured-roles .role:hover {
-    background: #FFD700 !important;
-    color: #000000 !important;
+    background: #25D366 !important;
+    color: #FFFFFF !important;
 }
 
 .featured-roles .role:focus-visible {
-    outline: 3px solid #FF6B6B;
-    outline-offset: 3px;
+    outline: 3px solid #25D366;
+    outline-offset: 2px;
 }
 
 .profile h1 {
-    font-family: 'Archivo Black', Arial Black, sans-serif !important;
-    font-size: 48px;
-    color: #000000 !important;
-    font-weight: 900 !important;
+    font-family: 'Roboto', system-ui, sans-serif !important;
+    font-size: 2.5rem;
+    color: #E9EDEF !important;
+    font-weight: 700 !important;
     margin: 6px 0;
-    text-transform: uppercase;
     letter-spacing: -0.5px;
-    text-shadow: 4px 4px 0 #FFD700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     line-height: 1.2;
+    text-align: left;
+}
+
+.bio-container {
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
 }
 
 .bio-container p {
-    color: #333333 !important;
-    font-family: Arial, sans-serif !important;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 600;
-    margin: 20px 0;
+    color: #8b8b8b !important;
+    font-family: system-ui, -apple-system, sans-serif !important;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
 }
 
 /* ===================================================================
@@ -193,18 +203,17 @@ body {
 }
 
 .button-link {
-    background: #FFFFFF !important;
-    color: #000000 !important;
-    border: 4px solid #000000 !important;
-    border-radius: 0 !important;
-    padding: 15px 30px !important;
-    font-size: 16px !important;
-    font-weight: 900 !important;
-    text-transform: uppercase;
+    background: #25D366 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
     text-align: center;
-    box-shadow: 6px 6px 0 #000000;
-    transition: all 0.2s ease !important;
-    transform: translateX(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease !important;
+    transform: translateY(0);
     min-height: 44px;
     display: inline-flex;
     align-items: center;
@@ -212,21 +221,20 @@ body {
 }
 
 .button-link:hover {
-    background: #000000 !important;
-    color: #FFD700 !important;
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 0 #FF6B6B !important;
+    background: #1fd655 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
     will-change: transform;
 }
 
 .button-link:active {
-    transform: translateY(-1px);
-    box-shadow: 4px 4px 0 #000000 !important;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(37, 211, 102, 0.2) !important;
 }
 
 .button-link:focus-visible {
-    outline: 3px solid #FF6B6B;
-    outline-offset: 3px;
+    outline: 3px solid #25D366;
+    outline-offset: 2px;
 }
 
 .social-links {
@@ -237,17 +245,17 @@ body {
 }
 
 .social-links a {
-    width: 50px !important;
-    height: 50px !important;
+    width: 44px !important;
+    height: 44px !important;
     min-width: 44px;
     min-height: 44px;
-    background: #000000 !important;
-    color: #FFFFFF !important;
-    border: 3px solid #000000 !important;
-    border-radius: 0 !important;
-    box-shadow: 5px 5px 0 #FFD700;
-    transition: all 0.2s ease;
-    transform: rotate(0deg);
+    background: #2a2a2a !important;
+    color: #E9EDEF !important;
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(1);
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -255,16 +263,20 @@ body {
 }
 
 .social-links a:hover {
-    background: #FFD700 !important;
-    color: #000000 !important;
+    background: #25D366 !important;
+    color: #FFFFFF !important;
     transform: scale(1.1);
-    box-shadow: 6px 6px 0 #FF6B6B !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
     will-change: transform;
 }
 
 .social-links a:focus-visible {
-    outline: 3px solid #FF6B6B;
-    outline-offset: 3px;
+    outline: 3px solid #25D366;
+    outline-offset: 2px;
+}
+
+.social-links svg {
+    fill: currentColor;
 }
 
 /* ===================================================================
@@ -274,12 +286,15 @@ body {
 @media print {
     body {
         background: white !important;
+        background-image: none !important;
+        color: black !important;
         padding: 0;
     }
 
     .profile-content {
         box-shadow: none !important;
-        border: 2px solid #000;
+        background: white !important;
+        border: 1px solid #ccc;
         animation: none;
     }
 
@@ -290,6 +305,22 @@ body {
 
     .profile h1 {
         text-shadow: none;
+        color: black !important;
+    }
+
+    .bio-container {
+        background: white !important;
+        border: 1px solid #ccc;
+    }
+
+    .bio-container p {
+        color: black !important;
+    }
+
+    .featured-roles .role {
+        color: black !important;
+        background: white !important;
+        border: 1px solid #ccc;
     }
 }
 
@@ -303,33 +334,46 @@ body {
     }
 
     .profile-content {
-        padding: 12px 20px;
-        border-width: 4px;
-        box-shadow: 8px 8px 0 #FFD700;
+        padding: 16px 24px;
+        border-radius: 24px;
     }
 
     .profile h1 {
-        font-size: 32px;
-        text-shadow: 3px 3px 0 #FFD700;
+        font-size: 1.75rem;
         margin: 4px 0;
     }
 
     .profile-image {
-        margin: 0 auto 12px;
+        width: 120px;
+        height: 120px;
+        margin: 0 0 12px;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .featured-roles {
+        justify-content: left;
+    }
+
+    .bio-container {
+        padding: 14px;
+        margin: 16px 0;
     }
 
     .bio-container p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .button-link {
-        padding: 14px 24px !important;
-        font-size: 15px !important;
+        padding: 12px 24px !important;
+        font-size: 14px !important;
     }
 
     .featured-roles .role {
         font-size: 9px;
-        padding: 4px 8px;
+        padding: 6px 12px;
     }
 
     .social-links a {
@@ -340,10 +384,10 @@ body {
 
 @media (max-width: 480px) {
     .profile-content {
-        padding: 24px 20px;
+        padding: 20px;
     }
 
     .profile h1 {
-        font-size: 28px;
+        font-size: 1.5rem;
     }
 }

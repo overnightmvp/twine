@@ -7,7 +7,8 @@ const themes = [
     '2-retro-gaming.min',
     '3-geometric-blue.min',
     '4-linkedin.min',
-    '5-Github.min'
+    '5-Github.min',
+    '6-whatsapp.min'
 ];
 
 const viewports = {
