@@ -340,7 +340,7 @@ body {
     }
 
     .profile-content {
-        padding: 16px 0px;
+        padding: 0;
         border-radius: 24px;
     }
 
@@ -389,7 +389,7 @@ body {
 
 @media (max-width: 480px) {
     .profile-content {
-        padding: 20px;
+        padding: 0px;
     }
 
     .profile h1 {
