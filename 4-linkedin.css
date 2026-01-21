@@ -49,8 +49,8 @@ a:hover {
 }
 
 body {
-    background-color: #F7F9FC !important;
-    background-image: linear-gradient(135deg, #5B8FB9 0%, #4A7BA7 100%), url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%230966C2' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
+    background-color: #57a0e8 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23f5f4f7' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
     min-height: 100vh;
     display: flex;
@@ -85,6 +85,7 @@ body {
 
 .profile-content {
     background:  #fdfdfd;
+    border: 2px solid #000000bf !important;
     padding: 24px 32px;
     animation: fadeInPage 0.6s ease-out;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -208,6 +209,7 @@ body {
 
 .button-link,
 .button-link:focus {
+    border: 1px solid #000000bf;
     font-size: 17px !important;
     padding: 12px 28px !important;
     border-radius: 999px !important;
@@ -227,12 +229,99 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.button-link:hover {
-    background: #0966C2 !important;
+/* Dynamic Button Colors - Professional Warm Palette */
+/* Automatically assigns complementary colors to buttons */
+.button-link:nth-child(1) { background: #0A66C2 !important; border-color: #000000 !important; } /* LinkedIn Blue */
+.button-link:nth-child(2) { background: #00A0B0 !important; border-color: #000000 !important; } /* Teal */
+.button-link:nth-child(3) { background: #FF8C42 !important; border-color: #000000 !important; } /* Orange */
+.button-link:nth-child(4) { background: #00875A !important; border-color: #000000 !important; } /* Green */
+.button-link:nth-child(5) { background: #004182 !important; border-color: #000000 !important; } /* Navy */
+.button-link:nth-child(6) { background: #FF6B6B !important; border-color: #000000 !important; } /* Coral */
+.button-link:nth-child(7) { background: #57A0E8 !important; border-color: #000000 !important; } /* Sky Blue */
+.button-link:nth-child(8) { background: #7B68EE !important; border-color: #000000 !important; } /* Purple */
+/* Pattern repeats for 9+ buttons */
+.button-link:nth-child(n+9) { background: #0A66C2 !important; border-color: #0A66C2 !important; }
+
+/* Individual hover states - each button darkens to its own color */
+.button-link:nth-child(1):hover {
+    background: #004182 !important;
+    border-color: #004182 !important;
+    box-shadow: 0 6px 20px rgba(0, 65, 130, 0.4) !important;
     color: #FFFFFF !important;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(10, 102, 194, 0.3) !important;
-    border-color: #0966C2 !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(2):hover {
+    background: #007A87 !important;
+    border-color: #007A87 !important;
+    box-shadow: 0 6px 20px rgba(0, 122, 135, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(3):hover {
+    background: #E6672B !important;
+    border-color: #E6672B !important;
+    box-shadow: 0 6px 20px rgba(230, 103, 43, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(4):hover {
+    background: #006644 !important;
+    border-color: #006644 !important;
+    box-shadow: 0 6px 20px rgba(0, 102, 68, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(5):hover {
+    background: #002850 !important;
+    border-color: #002850 !important;
+    box-shadow: 0 6px 20px rgba(0, 40, 80, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(6):hover {
+    background: #E64545 !important;
+    border-color: #E64545 !important;
+    box-shadow: 0 6px 20px rgba(230, 69, 69, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(7):hover {
+    background: #3B7AC7 !important;
+    border-color: #3B7AC7 !important;
+    box-shadow: 0 6px 20px rgba(59, 122, 199, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+.button-link:nth-child(8):hover {
+    background: #5E4AC7 !important;
+    border-color: #5E4AC7 !important;
+    box-shadow: 0 6px 20px rgba(94, 74, 199, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    will-change: transform;
+}
+
+/* Fallback for 9+ buttons - cycle back to first color */
+.button-link:nth-child(n+9):hover {
+    background: #004182 !important;
+    border-color: #004182 !important;
+    box-shadow: 0 6px 20px rgba(0, 65, 130, 0.4) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
     will-change: transform;
 }
 
@@ -294,7 +383,7 @@ body {
 
     .profile-content {
         box-shadow: none !important;
-        border: 2px solid #0966C2;
+        border: 2px solid #000000bf !important;
         animation: none;
         border-radius: 16px;
     }

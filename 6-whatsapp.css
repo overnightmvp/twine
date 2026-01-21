@@ -26,8 +26,9 @@
     display: block !important;
 }
 
-/* Role Hover State - Padding Adjustment */
+/* Role Hover State - Shrink Effect */
 .featured-roles .role:hover {
+    font-size: 15px !important;
     padding: 10px 10px !important;
 }
 
@@ -46,9 +47,9 @@ a {
 }
 
 body {
-    background-color: #0d0d0d;
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231a1a1a' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
-    color: #E9EDEF !important;
+
+    background-color: #232323;
+    background-attachment: fixed;    color: #E9EDEF !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif !important;
     min-height: 100vh;
     display: flex;
@@ -78,8 +79,9 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
+
 .profile-content {
-    background: #1e1e1e;
+    background-color: #2a2a2a9f;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     padding: 24px 32px;
@@ -119,7 +121,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 3px solid #25D366;
+    border: 3px solid #21C063;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
     display: block;
@@ -139,7 +141,7 @@ body {
 
 .featured-roles .role {
     background: #2a2a2a !important;
-    color: #25D366 !important;
+    color: #21C063 !important;
     padding: 8px 16px;
     border: none;
     border-radius: 999px;
@@ -153,12 +155,12 @@ body {
 }
 
 .featured-roles .role:hover {
-    background: #25D366 !important;
+    background: #21C063 !important;
     color: #FFFFFF !important;
 }
 
 .featured-roles .role:focus-visible {
-    outline: 3px solid #25D366;
+    outline: 3px solid #21C063;
     outline-offset: 2px;
 }
 
@@ -203,8 +205,8 @@ body {
 }
 
 .button-link {
-    background: #25D366 !important;
-    color: #FFFFFF !important;
+    background: #21C063 !important;
+    color: #2a2a2a !important;
     border: none !important;
     border-radius: 8px !important;
     padding: 14px 20px !important;
@@ -233,7 +235,7 @@ body {
 }
 
 .button-link:focus-visible {
-    outline: 3px solid #25D366;
+    outline: 3px solid #21C063;
     outline-offset: 2px;
 }
 
@@ -263,7 +265,7 @@ body {
 }
 
 .social-links a:hover {
-    background: #25D366 !important;
+    background: #21C063 !important;
     color: #FFFFFF !important;
     transform: scale(1.1);
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
@@ -271,7 +273,7 @@ body {
 }
 
 .social-links a:focus-visible {
-    outline: 3px solid #25D366;
+    outline: 3px solid #21C063;
     outline-offset: 2px;
 }
 
@@ -359,7 +361,6 @@ body {
 
     .bio-container {
         padding: 14px;
-        margin: 16px 0;
     }
 
     .bio-container p {
