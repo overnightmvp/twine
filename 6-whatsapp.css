@@ -170,7 +170,7 @@ body {
 
 .profile h1 {
     font-family: 'Roboto', system-ui, sans-serif !important;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #E9EDEF !important;
     font-weight: 700 !important;
     margin: 6px 0;
@@ -184,7 +184,6 @@ body {
     background: #2a2a2a98;
     border-radius: 8px;
     padding: 16px;
-    margin: 16px 0;
 }
 
 .bio-container p {
@@ -345,7 +344,7 @@ body {
     }
 
     .profile h1 {
-        font-size: 1.75rem;
+        font-size: 3.5rem;
         margin: 4px 0;
     }
 
@@ -393,6 +392,6 @@ body {
     }
 
     .profile h1 {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
     }
 }
