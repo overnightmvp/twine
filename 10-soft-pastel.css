@@ -8,7 +8,7 @@
    =================================================================== */
 
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?DynaPuff:wght@400..700&display=swap');
 
 /* ===================================================================
    GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
@@ -55,7 +55,6 @@ body {
     background-image: 
         radial-gradient(at 20% 80%, rgba(167, 196, 188, 0.15) 0%, transparent 50%),
         radial-gradient(at 80% 20%, rgba(224, 122, 95, 0.1) 0%, transparent 50%);
-    font-family: "DM Sans", system-ui, -apple-system, sans-serif !important;
     color: #3a3a3a !important;
     min-height: 100vh;
     display: flex;
@@ -183,7 +182,7 @@ body {
 }
 
 .profile h1 {
-    font-family: "DM Sans", sans-serif !important;
+    font-family: "DynaPuff", sans-serif !important;
     font-size: 40px;
     color: #2f5d50 !important;
     font-weight: 700 !important;
@@ -194,7 +193,6 @@ body {
 
 .bio-container p {
     color: #5a5a5a !important;
-    font-family: "DM Sans", sans-serif !important;
     font-size: 16px !important;
     line-height: 1.6;
     font-weight: 400;
@@ -230,7 +228,6 @@ body {
     justify-content: center;
     font-weight: 600 !important;
     text-decoration: none !important;
-    font-family: "DM Sans", sans-serif;
 }
 
 .button-link:hover {
