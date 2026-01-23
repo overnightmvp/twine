@@ -211,13 +211,13 @@ body {
 .button-link {
     background: #1ed75fb3 !important;
     color: #2a2a2a !important;
-    border: 1px solid #000000 !important;
+    border: 2px solid #000000aa !important;
     border-radius: 8px !important;
     padding: 14px 20px !important;
     font-size: 15px !important;
     font-weight: 500 !important;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 163, 16, 0.615);
     transition: all 0.3s ease !important;
     transform: translateY(0);
     min-height: 44px;

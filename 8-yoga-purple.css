@@ -8,7 +8,7 @@
    =================================================================== */
 
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 /* ===================================================================
    GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
@@ -57,7 +57,7 @@ body {
         radial-gradient(at 86% 79%, #c1b5cc 0%, transparent 59%),
         radial-gradient(at 10% 13%, #dfcef5 0%, transparent 40%),
         radial-gradient(at 50% 50%, #fff6f8 0%, transparent 50%);
-    font-family: "Crimson Text", Georgia, serif !important;
+    font-family: system-ui, -apple-system, sans-serif !important;
     color: #374151 !important;
     min-height: 100vh;
     display: flex;
@@ -90,6 +90,9 @@ body {
 .profile-content {
     border: none;
     animation: fadeInPage 0.6s ease-out;
+    background: #fefefea9;
+    padding: 16px;
+    border-radius: 32px;
 }
 
 /* Staggered Reveals */
@@ -138,7 +141,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 50%;
     border: 3px solid rgba(139, 92, 246, 0.3);
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
     display: block;
@@ -170,6 +173,7 @@ body {
     min-height: 36px;
     display: inline-flex;
     align-items: center;
+    color: #3d1a5f;
 }
 
 .featured-roles .role:hover {
@@ -185,7 +189,7 @@ body {
 }
 
 .profile h1 {
-    font-family: "Crimson Text", Georgia, serif !important;
+    font-family: "Uncial Antiqua", system-ui, -apple-system, sans-serif !important;
     font-size: 3rem;
     color: #5b21b6 !important;
     font-weight: 700 !important;
@@ -231,7 +235,7 @@ body {
     background: linear-gradient(135deg, #3001a0ae 0%, #5a21b6d1 50%,#3001a0ae 100%) !important;
     color: #ffffff !important;
     border: none !important;
-    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.25) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.345) !important;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
@@ -241,7 +245,7 @@ body {
     justify-content: center;
     font-weight: 500 !important;
     text-decoration: none !important;
-    font-family: "Crimson Text", Georgia, serif;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .button-link:hover {
