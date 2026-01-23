@@ -84,12 +84,8 @@ body {
 }
 
 .profile-content {
-    background: rgba(255, 255, 255, 0.95);
     border: none;
-    border-radius: 24px;
-    padding: 24px 32px;
     animation: fadeInPage 0.6s ease-out;
-    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.15);
 }
 
 /* Staggered Reveals */
@@ -188,7 +184,8 @@ body {
     font-weight: 700 !important;
     margin: 6px 0;
     letter-spacing: -0.5px;
-    line-height: 1.2;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .bio-container p {
@@ -216,7 +213,7 @@ body {
     font-size: 15px !important;
     padding: 14px 20px !important;
     border-radius: 20px !important;
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important;
+    background: linear-gradient(135deg, #3001a0ae 0%, #5a21b6d1 33%) !important;
     color: #ffffff !important;
     border: none !important;
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.25) !important;
@@ -341,12 +338,12 @@ body {
     }
 
     .profile-content {
-        padding: 0;
+        padding: 16px;
         border-radius: 20px;
     }
 
     .profile h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 4px 0;
     }
 
