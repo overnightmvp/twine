@@ -402,7 +402,7 @@ body {
 
 @media (max-width: 480px) {
     .profile-content {
-        padding: 0px;
+        padding: 16px;
     }
 
     .profile h1 {
