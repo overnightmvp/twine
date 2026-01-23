@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFD700" id="theme-meta">
     <title>Twine Profile - Theme Tester</title>
 
     <!-- Switch between themes by changing the href below -->
@@ -110,6 +111,30 @@
         // Theme Switcher Logic
         document.getElementById('theme-select').addEventListener('change', function() {
             const themeLink = document.getElementById('theme-css');
+            const themeMeta = document.getElementById('theme-meta');
+
+            // Map each theme to its primary brand color
+            const themeColors = {
+                '0-original.css': '#FFFFFF',
+                '1-neobrutalism.css': '#FFD700',
+                '2-retro-gaming.css': '#9E81FE',
+                '3-geometric-blue.css': '#3498DB',
+                '4-linkedin.css': '#0A66C2',
+                '5-Github.css': '#4493F8',
+                '6-whatsapp.css': '#0a0a0a',
+                '7-graph-paper.css': '#2D3748',
+                '8-yoga-purple.css': '#5b21b6',
+                '9-monochrome-swiss.css': '#000000',
+                '10-soft-pastel.css': '#2f5d50',
+                '11-navy-professional.css': '#0A2540'
+            };
+
+            // Update meta tag color
+            if (themeMeta && themeColors[this.value]) {
+                themeMeta.content = themeColors[this.value];
+            }
+
+            // Update theme CSS
             themeLink.href = this.value;
 
             // Force reload by removing and re-adding
