@@ -8,7 +8,12 @@ const themes = [
     '3-geometric-blue',
     '4-linkedin',
     '5-Github',
-    '6-whatsapp'
+    '6-whatsapp',
+    '7-graph-paper',
+    '8-yoga-purple',
+    '9-monochrome-swiss',
+    '10-soft-pastel',
+    '11-navy-professional'
 ];
 
 console.log('🔧 Starting CSS minification...\n');

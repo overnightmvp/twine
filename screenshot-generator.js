@@ -8,7 +8,12 @@ const themes = [
     '3-geometric-blue.min',
     '4-linkedin.min',
     '5-Github.min',
-    '6-whatsapp.min'
+    '6-whatsapp.min',
+    '7-graph-paper.min',
+    '8-yoga-purple.min',
+    '9-monochrome-swiss.min',
+    '10-soft-pastel.min',
+    '11-navy-professional.min'
 ];
 
 const viewports = {

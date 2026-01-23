@@ -1,0 +1,393 @@
+/* ===================================================================
+   CORPORATE GRAPH PAPER THEME
+   Professional monochrome design with graph paper background
+   =================================================================== */
+
+/* ===================================================================
+   S-TIER ENHANCEMENTS
+   =================================================================== */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ===================================================================
+   GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
+   =================================================================== */
+
+/* Container Padding Reset */
+.app,
+.profile {
+    padding: 0 !important;
+}
+
+/* Button Links - Full Width */
+.button-link {
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Role Hover State - Padding Adjustment */
+.featured-roles .role:hover {
+    padding: 10px 10px !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #2D3748 !important;
+}
+
+a:hover {
+    color: #000000 !important;
+}
+
+body {
+    background-color: #fefefe;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b0aeb2' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: "Source Sans 3", system-ui, -apple-system, sans-serif !important;
+    color: #1a202c !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ===================================================================
+   PAGE LOAD REVEAL ANIMATION
+   =================================================================== */
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInStagger {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app {
+    background: transparent !important;
+    box-shadow: none !important;
+    max-width: 600px;
+    width: 100%;
+}
+
+.profile-content {
+    animation: fadeInPage 0.6s ease-out;
+}
+
+/* Staggered Reveals */
+.profile-image { animation: fadeInStagger 0.6s ease-out 0s both; }
+.featured-roles { animation: fadeInStagger 0.6s ease-out 0.1s both; }
+.profile h1 { animation: fadeInStagger 0.6s ease-out 0.2s both; }
+.bio-container { animation: fadeInStagger 0.6s ease-out 0.3s both; }
+.button-links { animation: fadeInStagger 0.6s ease-out 0.4s both; }
+.social-links { animation: fadeInStagger 0.6s ease-out 0.5s both; }
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+
+    body {
+        animation: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b0aeb2' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+}
+
+/* ===================================================================
+   PROFILE COMPONENTS
+   =================================================================== */
+
+.profile {
+    display: block;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 16px;
+    contain: layout;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #cbd5e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.featured-roles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.featured-roles .role {
+    background: #f7fafc !important;
+    color: #2D3748 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.featured-roles .role:hover {
+    background: #2D3748 !important;
+    color: #ffffff !important;
+    border-color: #2D3748;
+}
+
+.featured-roles .role:focus-visible {
+    outline: 2px solid #2D3748;
+    outline-offset: 2px;
+}
+
+.profile h1 {
+    font-family: "Source Sans 3", sans-serif !important;
+    font-size: 3.5rem;
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    margin: 6px 0;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.bio-container p {
+    color: #4a5568 !important;
+    font-family: "Source Sans 3", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* ===================================================================
+   BUTTON MICROANIMATIONS (ONLY)
+   =================================================================== */
+
+.button-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 30px 0 !important;
+}
+
+.button-link,
+.button-link:focus {
+    font-size: 15px !important;
+    padding: 14px 20px !important;
+    border-radius: 6px !important;
+    background: #2D3748 !important;
+    color: #ffffff !important;
+    border: 1px solid #2D3748 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.button-link:hover {
+    background: #1a202c !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    border-color: #1a202c !important;
+    will-change: transform;
+}
+
+.button-link:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.button-link:focus-visible {
+    outline: 2px solid #2D3748;
+    outline-offset: 2px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.social-links a {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px;
+    min-height: 44px;
+    background: #f7fafc !important;
+    color: #2D3748 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 50% !important;
+    transition: all 0.2s ease;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+.social-links a:hover {
+    background: #2D3748 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    will-change: transform;
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid #2D3748;
+    outline-offset: 2px;
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+@media print {
+    body {
+        background: white !important;
+        padding: 0;
+    }
+
+    .profile-content {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e0;
+        animation: none;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .profile-details {
+        text-align: left;
+    }
+
+    .featured-roles {
+        justify-content: flex-start;
+    }
+
+    .social-links,
+    .button-links {
+        display: none !important;
+    }
+
+    .profile h1 {
+        color: #000 !important;
+    }
+}
+
+/* ===================================================================
+   MOBILE RESPONSIVE
+   =================================================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile-content {
+        padding: 0;
+        border-radius: 8px;
+    }
+
+    .profile h1 {
+        font-size: 3.5rem;
+        margin: 4px 0;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 12px;
+    }
+
+    .profile-details {
+        text-align: center;
+    }
+
+    .featured-roles {
+        justify-content: center;
+    }
+
+    .bio-container p {
+        font-size: 14px;
+    }
+
+    .button-link {
+        padding: 12px 24px !important;
+        font-size: 15px !important;
+    }
+
+    .featured-roles .role {
+        font-size: 9px;
+        padding: 6px 12px;
+    }
+
+    .social-links a {
+        width: 44px !important;
+        height: 44px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content {
+        padding: 0px;
+    }
+
+    .profile h1 {
+        font-size: 3.5rem;
+    }
+
+    .bio-container p {
+        font-size: 13px;
+    }
+}

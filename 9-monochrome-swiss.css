@@ -1,6 +1,6 @@
 /* ===================================================================
-   SHARP ANGULAR PROFESSIONAL THEME
-   Corporate, precise design with sharp rectangular edges
+   MONOCHROME SWISS THEME
+   Ultra-minimal black and white design inspired by Swiss typography
    =================================================================== */
 
 /* ===================================================================
@@ -8,7 +8,7 @@
    =================================================================== */
 
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* ===================================================================
    GLOBAL CSS RULES (MANDATORY - ALL TEMPLATES)
@@ -43,23 +43,22 @@ html {
 
 a {
     text-decoration: none !important;
-    color: #2C3E50 !important;
+    color: #000000 !important;
 }
 
 a:hover {
-    color: #E74C3C !important;
+    color: #000000 !important;
 }
 
 body {
-    background-color: #ECF0F1 !important;
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%233498DB' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
-    font-family: "Roboto Condensed", sans-serif !important;
+    background-color: #ffffff;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: #000000 !important;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    position: relative;
 }
 
 /* ===================================================================
@@ -81,16 +80,15 @@ body {
     box-shadow: none !important;
     max-width: 600px;
     width: 100%;
-    position: relative;
-    z-index: 1;
 }
 
 .profile-content {
-    background: #FFFFFF;
-    padding: 16px 32px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 0;
+    padding: 40px;
     animation: fadeInPage 0.6s ease-out;
-    box-shadow: 4px 4px 0 #2C3E50;
-    border: 2px solid #2C3E50;
+    box-shadow: none;
 }
 
 /* Staggered Reveals */
@@ -109,6 +107,10 @@ body {
         transition-duration: 0.01ms !important;
     }
     html { scroll-behavior: auto; }
+
+    body {
+        animation: none;
+    }
 }
 
 /* ===================================================================
@@ -122,7 +124,7 @@ body {
 .profile-image {
     width: 120px;
     height: 120px;
-    margin: 0 auto 16px;
+    margin: 0 auto 24px;
     contain: layout;
 }
 
@@ -130,11 +132,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0;
-    border: 3px solid #2C3E50;
-    box-shadow: 4px 4px 0 #3498DB;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: none;
     display: block;
-/*    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);*/
 }
 
 .profile-details {
@@ -143,61 +144,58 @@ body {
 
 .featured-roles {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .featured-roles .role {
-    background: rgba(52, 152, 219, 0.15) !important;
-    color: #2C3E50 !important;
-    padding: 5px 10px;
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 6px 12px;
     border-radius: 0;
     font-size: 10px;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     text-transform: uppercase;
-    border: 2px solid #2C3E50;
+    letter-spacing: 1px;
+    border: none;
     transition: all 0.2s ease;
     min-height: 36px;
     display: inline-flex;
     align-items: center;
-    letter-spacing: 1px;
-    box-shadow: 2px 2px 0 #2C3E50;
 }
 
 .featured-roles .role:hover {
-    background: #3498DB !important;
-    color: #E74C3C !important;
-    border-color: #2C3E50;
-    box-shadow: 3px 3px 0 #2C3E50;
-    transform: translate(-1px, -1px);
+    background: #ffffff !important;
+    color: #000000 !important;
+    outline: 2px solid #000000;
+    outline-offset: -2px;
 }
 
 .featured-roles .role:focus-visible {
-    outline: 3px solid #E74C3C;
-    outline-offset: 3px;
+    outline: 2px solid #000000;
+    outline-offset: 2px;
 }
 
 .profile h1 {
-    font-family: "Roboto Condensed", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
     font-size: 48px;
-    color: #2C3E50 !important;
+    color: #000000 !important;
     font-weight: 700 !important;
-    margin: 6px 0;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 0 #3498DB;
-    line-height: 1.2;
+    margin: 20px 0;
+    letter-spacing: -2px;
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
 .bio-container p {
-    color: #2C3E50 !important;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    color: #000000 !important;
+    font-family: "Inter", sans-serif !important;
     font-size: 16px !important;
-    line-height: 1.3;
-    font-weight: 200;
-    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 24px 0;
 }
 
 /* ===================================================================
@@ -207,19 +205,19 @@ body {
 .button-links {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin: 30px 0 !important;
+    gap: 8px;
+    margin: 32px 0 !important;
 }
 
 .button-link,
 .button-link:focus {
-    font-size: 17px !important;
-    padding: 10px 25px !important;
+    font-size: 15px !important;
+    padding: 14px 24px !important;
     border-radius: 0 !important;
-    background: rgba(52, 152, 219, 0.15) !important;
-    color: #2C3E50 !important;
-    border: 2px solid #2C3E50 !important;
-    box-shadow: 3px 3px 0 #2C3E50 !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
     cursor: pointer;
     transition: all 0.2s ease;
     text-align: center;
@@ -227,67 +225,66 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     text-decoration: none !important;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .button-link:hover {
-    background: #2C3E50 !important;
-    color: #E74C3C !important;
-    transform: translate(-2px, -2px);
-    box-shadow: 5px 5px 0 #3498DB !important;
-    border-color: #2C3E50 !important;
-    will-change: transform;
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: none;
+    box-shadow: none !important;
+    border-color: #000000 !important;
+    will-change: auto;
 }
 
 .button-link:active {
-    transform: translate(0, 0) !important;
-    box-shadow: 2px 2px 0 #2C3E50 !important;
+    transform: none !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 .button-link:focus-visible {
-    outline: 3px solid #E74C3C;
-    outline-offset: 3px;
+    outline: 2px solid #000000;
+    outline-offset: 4px;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .social-links a {
-    width: 50px !important;
-    height: 50px !important;
+    width: 44px !important;
+    height: 44px !important;
     min-width: 44px;
     min-height: 44px;
-    background: rgba(52, 152, 219, 0.15) !important;
-    color: #2c3e50 !important;
-    border: 2px solid #2C3E50 !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #000000 !important;
     border-radius: 0 !important;
     transition: all 0.2s ease;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     text-decoration: none !important;
-    box-shadow: 2px 2px 0 #2C3E50;
 }
 
 .social-links a:hover {
-    background: #2C3E50 !important;
-    color: #E74C3C !important;
-    transform: translate(-1px, -1px);
-    box-shadow: 3px 3px 0 #3498DB !important;
-    will-change: transform;
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: none;
+    box-shadow: none !important;
+    will-change: auto;
 }
 
 .social-links a:focus-visible {
-    outline: 3px solid #E74C3C;
-    outline-offset: 3px;
+    outline: 2px solid #000000;
+    outline-offset: 2px;
 }
 
 /* ===================================================================
@@ -302,7 +299,7 @@ body {
 
     .profile-content {
         box-shadow: none !important;
-        border: 2px solid #2C3E50;
+        border: 1px solid #000000;
         animation: none;
     }
 
@@ -327,8 +324,7 @@ body {
     }
 
     .profile h1 {
-        text-shadow: none;
-        color: #2C3E50 !important;
+        color: #000 !important;
     }
 }
 
@@ -338,7 +334,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 0 16px;
+        padding: 16px;
     }
 
     .profile {
@@ -346,20 +342,18 @@ body {
     }
 
     .profile-content {
-        padding: 12px 20px;
-        box-shadow: 3px 3px 0 #2C3E50;
+        padding: 32px 24px;
     }
 
     .profile h1 {
-        font-size: 32px;
-        margin: 4px 0;
-        text-shadow: 2px 2px 0 #3498DB;
+        font-size: 36px;
+        margin: 16px 0;
     }
 
     .profile-image {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto 12px;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
     }
 
     .profile-details {
@@ -375,21 +369,18 @@ body {
     }
 
     .button-link {
-        padding: 12px 24px !important;
+        padding: 12px 20px !important;
         font-size: 14px !important;
-        box-shadow: 2px 2px 0 #2C3E50 !important;
     }
 
     .featured-roles .role {
         font-size: 9px;
-        padding: 4px 8px;
-        box-shadow: 1px 1px 0 #2C3E50;
+        padding: 5px 10px;
     }
 
     .social-links a {
-        width: 48px !important;
-        height: 48px !important;
-        box-shadow: 3px 3px 0 #2C3E50;
+        width: 44px !important;
+        height: 44px !important;
     }
 }
 
@@ -399,6 +390,10 @@ body {
     }
 
     .profile h1 {
-        font-size: 28px;
+        font-size: 32px;
+    }
+
+    .bio-container p {
+        font-size: 13px;
     }
 }
